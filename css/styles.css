@@ -1,0 +1,214 @@
+body {
+	font-family: 'Roboto Slab', serif;
+}
+
+.man1,
+.man2,
+.man3,
+.man4,
+.man5,
+.man6,
+.man7,
+.man8,
+.man9,
+.man10,
+.man11 {
+	display:none;
+}
+
+svg.hangman {
+	height: 310px;
+	margin: 0 auto;
+	width: 330px;
+	display: block;
+	clear: both;
+}
+
+.full-container {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+}
+
+svg {
+	width:10%;
+}
+
+header {
+	margin: 1% auto 2% auto;
+	width: 70%;
+}
+
+.answer,
+.letters {
+	margin-bottom: 2%;
+}
+
+.letter {
+	margin-bottom: 2px;
+}
+
+.sub_header > p {
+	margin-top: 0;
+	display: inline;
+}
+
+.sub_header > p:first-of-type {
+	float: left;
+}
+
+.sub_header > p:last-of-type {
+	float: right;
+}
+
+.skip_game:hover {
+	color: #3f5765;
+	cursor: pointer;
+}
+
+.main-game {
+	margin-bottom: 0;
+}
+
+#theme {
+	background: #bdd4de;
+	color: #2b3a42;
+	font-size: 1.5em;
+	padding: 20px 0;
+}
+
+#answer {
+	font-size: 3em;
+	color: #3f5765;
+	text-transform: uppercase;
+}
+
+.letters {
+	font-family: 'Lato', sans-serif;
+}
+
+.letter {
+	display: inline-block;
+	background: #3f5765;
+	color: #fff;
+	width:50px;
+	height:50px;
+	border-radius: 5px;
+	font-weight: 300;
+	font-size: 1.5em;
+	line-height:50px;
+}
+
+.letter_pressed,
+.active:hover {
+	background: #e74c3c;
+	cursor: pointer;
+}
+
+.message {
+	background: #fff;
+	padding: 15px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40%;
+	display: none;
+}
+
+.message > span {
+	font-size: .7em;
+	margin-top: 0;
+}
+
+.whatMessage {
+	font-size: 1.5em;
+	color: #e74c3c;
+	margin-bottom: 0;
+}
+
+.play_again {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.play_again:hover {
+	color: #3f5765;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 785px){
+	#answer {
+		font-size: 2em;
+	}
+
+	.letter {
+		width: 30px;
+		height: 30px;
+		font-size: 1em;
+		line-height: 30px;
+	}
+
+	.hangman {
+		height: 250px;
+		width: 280px;
+	}
+
+	.main-game,
+	#answer {
+		margin-bottom: 3%;
+	}
+}
+
+@media screen and (max-width: 490px){
+	#theme {
+		font-size: 1em;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	svg.hangman {
+		height: 220px;
+		width: 240px;
+	}
+
+	#answer {
+		font-size: 1.2em;
+	}
+
+	.message {
+		width: 300px;
+	}
+
+	.whatMessage {
+		font-size:1.1em;
+	}
+
+	.full-container {
+		width: 99%;
+	}
+
+	.letter {
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+	}
+
+	.main-game,
+	#answer {
+		margin-bottom: 7%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.letter {
+		width: 20px;
+		height: 40px;
+		line-height: 40px;
+	}
+}

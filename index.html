@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="favicon" href="favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="full-container">
+        <header>
+            <div id="theme"></div>
+                    <div class="sub_header">
+        <p>Score: <span class="game_score">0</p>
+    </div>
+        </header>
+        <div class="main-game">
+    <svg class="hangman" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 369.651 346" enable-background="new 0 0 369.651 346" xml:space="preserve">
+        <rect class="man1" x="2" y="322" fill="#2B3A42" width="326" height="24"/>
+        <rect class="man2" x="0" fill="#2B3A42" width="24" height="346"/>
+        <rect class="man3" x="2" fill="#2B3A42" width="325" height="24"/>
+        <rect class="man4" x="-5.8" y="31.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -17.8943 43.2585)" fill="#2B3A42" width="98.1" height="24"/>
+        <rect class="man5" x="316" y="0" fill="#2B3A42" width="12" height="59"/>
+        <circle class="man6" fill="none" stroke="#2B3A42" stroke-width="5" stroke-miterlimit="10" cx="322" cy="92.8" r="33.9"/>
+        <rect class="man7" x="321" y="126" fill="#2B3A42" width="6" height="93"/>
+        <rect class="man8" x="301.4" y="121.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -15.434 258.5853)" fill="#2B3A42" width="6" height="52.2"/>
+        <rect class="man9" x="340.4" y="121.8" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 481.6625 495.3573)" fill="#2B3A42" width="6" height="52.2"/>
+        <rect class="man10" x="299.3" y="209.3" transform="matrix(0.7736 0.6336 -0.6336 0.7736 223.0435 -136.3333)" fill="#2B3A42" width="6" height="69.4"/>
+        <rect class="man11" x="342.3" y="209.3" transform="matrix(-0.7736 0.6336 -0.6336 -0.7736 767.1137 213.9756)" fill="#2B3A42" width="6" height="69.4"/>
+</svg>
+
+</div>
+<div class="message">
+    <p class="whatMessage">Congratulations! You won!</p>
+    <p class="play_again">Play again?</p>
+    <span>[or press Enter]</span>
+</div>
+<div id="answer"></div>
+<div class="letters">
+    </div>
+</div>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
